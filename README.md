@@ -1,2 +1,2 @@
-# Salary_Lupin_Detector
-재택근무자들을 위한 메타버스 사무실 프로그램
+# ZXXM, 구XMeet 대신 쓰세요
+무료 + 무제한 메타버스 회의실 프로그램
