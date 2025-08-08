@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,9 +21,13 @@ public class MainDirector : MonoBehaviour
             {
                 // 이름 저장 (선택사항)
                 //GameManager.Instance.PlayerName = playerName;
-
-                // 씬 전환
+                ClientSocket.Instance.MakeConnection("127.0.0.1", 9000, playerName);
+                
+                //DontDestroyOnLoad(ClientSocket.Instance);
                 SceneManager.LoadScene("GameScene");
+                
+                Debug.Log($"[MainDirector] PlayerName = {ClientSocket.Instance.PlayerName}");
+                // 씬 전환
             }
             else
             {

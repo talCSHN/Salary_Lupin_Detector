@@ -5,14 +5,22 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rigid2D;
     float walkForce = 30.0f;
     float maxWalkSpeed = 5.0f;
+    public string playerName;
+    public void Init(string name)
+    {
+        playerName = name;
+    }
     void Start()
     {
         Application.targetFrameRate = 60;
         this.rigid2D = GetComponent<Rigidbody2D>();
+        Debug.Log($"[PlayerController] I am {playerName}, my owner is {ClientSocket.Instance.PlayerName}");
     }
 
     void Update()
     {
+        // 다른 캐릭터 조작 방지
+        //if (playerName != ClientSocket.Instance.PlayerName) return;
         // 캐릭터 이동
         int keyX = 0;
         int keyY = 0;

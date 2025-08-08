@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &309544768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309544770}
+  - component: {fileID: 309544769}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &309544769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309544768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5fb83a6c951074f9a4ac04ebf40143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 3620828875706976156, guid: 89950ede2be637242bcd3f683e2a1f12, type: 3}
+--- !u!4 &309544770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309544768}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.45176, y: 0.28028, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315447569
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,8 +245,8 @@ Transform:
   m_GameObject: {fileID: 315447569}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960.03284, y: -440.327, z: 0}
-  m_LocalScale: {x: 1.9798521, y: 1.7438693, z: 1.7438693}
+  m_LocalPosition: {x: -960, y: -447.1, z: 0}
+  m_LocalScale: {x: 1.9957224, y: 1.7865942, z: 1.7438693}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019609082}
@@ -882,3 +927,4 @@ SceneRoots:
   - {fileID: 1294006816}
   - {fileID: 1201031666}
   - {fileID: 2019609082}
+  - {fileID: 309544770}
